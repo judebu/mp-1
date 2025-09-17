@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#page-wrapper {
+    width: 80vw;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-right: 2px solid black;
+}
+
+#top-header {
+    background-color: rgb(100, 140, 106);
+    text-align: left;
+    padding: 15px;
+    width: 80vw;
+    margin: 0 auto;
+    border-radius: none;
+    font-family: 'Inter var', sans-serif;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+nav {
+    
+    width: 30%;
+    padding: 10px;
+    background-color: rgb(100, 140, 106);
+    /* order: -1 to change oreintation of navigation bar, researched code on stackoverflow */
+    order: -1;
+    border-bottom-left-radius: 12px;
+}
+
+
+button {
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+hr {
+    border: 0.1px solid black;
+}
+
+header {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+main {
+    flex: 1;
+    width: 70%;
+}
+
+li {
+    background-color: white;
+    border: 2px; 
+    border: solid;
+    border-color: black;
+    padding: 10px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    /* box shadow for aesthetic design*/
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+#img1 {
+    max-height:250px;
+    max-width: 1000px;
+    border-radius: 12px;
+}
+
+/* added to make hover color, nice aesthetic design :)*/
+li:hover {
+    background: crimson;
+}
+
+li a {
+    color: black; 
+    /* to remove *'s */          
+    text-decoration: none; 
+    display: block;
+}
+
+#list {
+        /* to remove *'s */          
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 80vw;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    background-color: rgb(100, 140, 106);
+    color: white;
+    text-align: right;
+    padding: 10px 20px;
+    font-size: calc(11px);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+                
+/* for desktop view */          
+@media (max-width: 1000px) {
+    main {
+        width: 100%;
+    }
+}
+/* for mobile view */   
+@media (max-width: 750px) {
+    #page-wrapper {
+        flex-direction: column;
+    }
+
+    nav {
+        width: 100%;
+        order: -1;
+        border-radius: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    #list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    li {
+        /* keeps items same size and a max size when shrinking*/   
+        flex: 1 0 140px;
+        max-width: 140px;
+        margin: 5px;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    #top-header {
+        text-align: center;
+    }
+}
+
+#calculator {
+    width: 100%;
+    padding: 20px;
+    border: 2px solid;
+    border-color: #000000;
+    border-radius: 12px;
+    background-color: rgb(100, 140, 106);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+#calculator input {
+    width: 100%;
+    padding: 10px;
+    font-size: calc(17px);
+}
+
+#calculator .buttons button {
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: calc(20px);
+    cursor: pointer;
+}
+
+#output {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: calc(20px);
+}
