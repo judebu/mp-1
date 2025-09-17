@@ -173,6 +173,7 @@ footer {
 #calculator input {
     width: 100%;
     padding: 10px;
+        font-family: "Audiowide", sans-serif;
     font-size: calc(17px);
 }
 
