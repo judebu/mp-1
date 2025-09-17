@@ -74,7 +74,8 @@ li {
 }
 
 #img1 {
-    height: 40vw;
+    width: 40vw;
+    max-height: 30vw;
     border-radius: 12px;
 }
 
